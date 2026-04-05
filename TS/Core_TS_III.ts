@@ -143,9 +143,9 @@ function fetchData(callback: (data: string) => void): void {
 }
 
 // Generic Function
-function identity<T>(arg: T): T {
-    return arg;
-}
+// function identity<T>(arg: T): T {
+//     return arg;
+// }
 
 // Function type aliases
 type StringOrNumber = string | number;
