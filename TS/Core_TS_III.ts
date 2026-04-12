@@ -17,9 +17,7 @@ console.log(multiply(4, 6)); // Output: 24
 
 // Function type as a variable
 
-let greet:(name:string) => string;
-
-greet = (name: string): string => {
+let greet: (name: string) => string = (name: string): string => {
     return `Hello, ${name}!`;
 };
 

@@ -114,3 +114,58 @@ const d: C = {
 };
 
 console.log(typeof d); // Output: object
+
+// Multiple Interface - A Class Can implement multiple interfaces (interface which defaine structure of an objects)
+
+class Duck implements flyable, swimmable {
+
+    fly(): void {
+        console.log("The duck is flying."); 
+
+    }
+
+    swim(): void {
+        console.log("The duck is swimming.");
+    }
+
+}
+
+
+class aeroplane extends Duck implements flyable {
+
+}
+
+
+
+interface flyable {
+    fly(): void;
+}
+
+interface swimmable {
+    swim(): void;
+}   
+
+// Extending interface
+
+interface Animal {
+    eat(): void;
+}
+interface Bird extends Animal {
+
+    eateat(): void;
+    fly1(): void;
+}   
+
+// const eagle: Bird ={
+//     eateat() {
+//         console.log("The eagle is eating.");
+
+//     },
+//     fly1() {
+//         console.log("The eagle is flying.");
+
+//     },
+//     eat: function (): void {
+//         throw new Error("Function not implemented.");
+//     }
+// };
