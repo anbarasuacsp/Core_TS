@@ -38,19 +38,19 @@ let count = 5; // TypeScript infers that 'count' is of type 'number'
 console.log(count);
 
 //functions
-function add(a: number, b: number): number {
+function addt(a: number, b: number): number {
     return a + b;
 }
-console.log(add(5, 10));
+console.log(addt(5, 10));
 
 // function with default parameters
-function greet(name: string): string {
+function greetw(name: string = "Guest"): string {
 
 
     return `Hello, ${name}!`;
 }
-console.log(greet("Karthik")); // Output: Hello, Guest!
-console.log(greet("Alice")); // Output: Hello, Alice!
+console.log(greetw("Karthik")); // Output: Hello, Guest!
+// console.log(greet("Alice")); // Output: Hello, Alice!
 
 // Objects
 let person1: { name: string; age: number } = {
